@@ -1,0 +1,35 @@
+default_chain: stride
+chains:
+  stride:
+    key: relayer-stride
+    chain-id: STRIDE-TESTNET-4
+    rpc-addr: http://116.203.47.199:26657
+    grpc-addr: http://116.203.47.199:9090
+    account-prefix: stride
+    keyring-backend: test
+    gas: 200000
+    gas-adjustment: 1.2
+    gas-prices: 0.025ustrd
+    key-directory: /root/.icq/keys
+    debug: false
+    timeout: 20s
+    block-timeout: ""
+    output-format: json
+    sign-mode: direct
+  gaia:
+    key: relayer-gaia
+    chain-id: GAIA
+    rpc-addr: http://localhost:26657
+    grpc-addr: http://localhost:9090
+    account-prefix: cosmos
+    keyring-backend: test
+    gas: 200000
+    gas-adjustment: 1.2
+    gas-prices: 0.025uatom
+    keys-directory: /root/.icq/keys
+    debug: false
+    timeout: 20s
+    block-timeout: ""
+    output-format: json
+    sign-mode: direct
+cl: {}
